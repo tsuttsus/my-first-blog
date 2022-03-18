@@ -6,9 +6,20 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <!--
         {% if GOOGLE_ANALYTICS_TRACKING_ID %}
             {% include 'blog/ga.html' %}
         {% endif %}
+        -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KKRWVTS12X"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            alert("GA");
+            gtag('config', 'G-KKRWVTS12X');
+        </script>
+        
     </head>
     <body>
         <div class="page-header">
